@@ -127,6 +127,11 @@ public class ButtonClickListener implements ActionListener{
             
             if (currentValue.isEmpty() || currentValue.equals("0")) {
                 display.setText("-");
+                currentValue = display.getText();
+                if(currentValue.equals("-")){
+                    return;
+                }
+
             }
 
             currentValue = display.getText();
